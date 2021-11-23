@@ -1,0 +1,65 @@
+site_name: Toxilab
+site_url: https://toxilab.github.io
+
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  font:
+    text: Roboto
+  features:
+    - navigation.top
+    - search.suggest
+  palette:
+    - scheme: default
+      primary: white
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  plugins:
+    - search
+extra:
+  version:
+    provider: mike
+
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - admonition
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+
+extra_css:
+  - stylesheets/extra.css
+
+
+copyright: ©Copyright 2021 Toxilab
+
+nav:
+    - Overview: 'index.md'
+    - Using Toxilab:
+        - 'Setting up your printer': 'printer-setup.md'
+ 
+
+
+
+
+        
+  
+        
+
+
